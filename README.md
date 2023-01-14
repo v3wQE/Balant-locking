@@ -21,7 +21,7 @@ game.StarterGui:SetCore("SendNotification",  {
 getgenv().Target = true
 
 -- Configuration
-getgenv().Key = Enum.KeyCode.Q
+getgenv().Key = Enum.KeyCode.C
 getgenv().Prediction = 0.132973524154
 getgenv().ChatMode = false
 getgenv().NotifMode = true
