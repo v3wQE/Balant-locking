@@ -1,9 +1,28 @@
+ local function callback(Text)
+ if Text == "Button1 text" then
+  print ("Answer")
+elseif Text == ("Button2 text") then
+ print ("Answer2")
+ end
+end
+
+local NotificationBindable = Instance.new("BindableFunction")
+NotificationBindable.OnInvoke = callback
+--
+game.StarterGui:SetCore("SendNotification",  {
+ Title = "Made By Kxrit Hub";
+ Text = "I Hope You Enjoin :)";
+ Icon = "";
+ Duration = 5;
+ Callback = NotificationBindable;
+})
+
 -- Toggle
 getgenv().Target = true
 
 -- Configuration
-getgenv().Key = Enum.KeyCode.C
-getgenv().Prediction = 0.140
+getgenv().Key = Enum.KeyCode.Q
+getgenv().Prediction = 0.132973524154
 getgenv().ChatMode = false
 getgenv().NotifMode = true
     getgenv().PartMode = true
@@ -27,8 +46,8 @@ getgenv().Circle = true
     Tracer.Transparency = 0.5
     Tracer.Parent = game.Workspace	
     Tracer.Shape = _G.Types.Block
-    Tracer.Size = Vector3.new(10,10,10)
-    Tracer.Color = Color3.fromRGB(74, 65, 42)
+    Tracer.Size = Vector3.new(2,2,2)
+    Tracer.Color = Color3.fromRGB(0, 255, 60)
     
     --
     local plr = game.Players.LocalPlayer
@@ -36,7 +55,7 @@ local mouse = plr:GetMouse()
 local Runserv = game:GetService("RunService")
 
 circle = Drawing.new("Circle")
-circle.Color = Color3.fromRGB(25,25,25)
+circle.Color = Color3.fromRGB(0, 255, 60)
 circle.Thickness = 0
 circle.NumSides = 732
 circle.Radius = getgenv().Fov
@@ -72,8 +91,8 @@ end)
     --
     if getgenv().valiansh == true then
                         game.StarterGui:SetCore("SendNotification", {
-                   Title = "ugliest lock",
-                   Text = "already loaded",
+                   Title = "Kxrit Hub Lock",
+                   Text = "success loaded",
                    Duration = 5
         
                    })
@@ -97,8 +116,8 @@ end)
         	end	
                if getgenv().NotifMode then
     			game.StarterGui:SetCore("SendNotification", {
-        Title = "ugliest lock";
-        Text = "Target: "..tostring(Plr.Character.Humanoid.DisplayName);
+        Title = "Lock";
+        Text = "Lock To: "..tostring(Plr.Character.Humanoid.DisplayName);
     
     })
     end
@@ -108,7 +127,7 @@ end)
         	end	
         if getgenv().NotifMode then
                         game.StarterGui:SetCore("SendNotification", {
-                   Title = "ugliest lock",
+                   Title = "Unlocked",
                    Text = "unlocked",
                    Duration = 5
                })
