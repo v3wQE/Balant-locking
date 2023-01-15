@@ -29,7 +29,7 @@ getgenv().NotifMode = true
     getgenv().AirshotFunccc = true
     getgenv().Partz = "Head"
 getgenv().AutoPrediction = true
-getgenv().Fov = 25
+getgenv().Fov = 100
 getgenv().Circle = true
 --
     _G.Types = {
